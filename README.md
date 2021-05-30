@@ -4,16 +4,16 @@
 View the pdf file regarding the details of this project. This project is inspired from this paper: https://arxiv.org/abs/1905.08139. 
 
 ## Code
-<code> preprocessing.py </code> : Take in  WSIs, partition into patches, do background removal and stain normalisation
-<code> data_preparation.py </code>: Check on similarity of tiles based on spatial similarity. For each WSI, tiles located within 1792 pixels are considered similar, tiles located more than 6720 pixels away are considered different 
-<code> data_preparation_eval.py </code>: Prepare masks for model evaluation (four different mask variants used)
-<code> train.py </code>: Training model for siamese neural network, contrastive loss. Choose weakly or unsupervised 
-<code> trainTriplet.py </code> Training model for siamese neural network, triplet loss
-<code> losses.py </code> Types of losses (Contrastive and Triplet)
-<code> DensenetSiamese.py </code> Model used 
-<code> utils.py </code> Functions and classes such as pytorch dataset, plotting graphs, loading datasets 
-<code> analyse_results.py </code> Analysis of embeddings (scatter plots) and welch’s test 
-<code> plot_visualisation.py </code> Overlay images and mask and save 
+1. <code> preprocessing.py </code> : Take in  WSIs, partition into patches, do background removal and stain normalisation
+2. <code> data_preparation.py </code>: Check on similarity of tiles based on spatial similarity. For each WSI, tiles located within 1792 pixels are considered similar, tiles located more than 6720 pixels away are considered different 
+3. <code> data_preparation_eval.py </code>: Prepare masks for model evaluation (four different mask variants used)
+4. <code> train.py </code>: Training model for siamese neural network, contrastive loss. Choose weakly or unsupervised 
+5. <code> trainTriplet.py </code> Training model for siamese neural network, triplet loss
+6. <code> losses.py </code> Types of losses (Contrastive and Triplet)
+7. <code> DensenetSiamese.py </code> Model used 
+8. <code> utils.py </code> Functions and classes such as pytorch dataset, plotting graphs, loading datasets 
+9. <code> analyse_results.py </code> Analysis of embeddings (scatter plots) and welch’s test 
+10. <code> plot_visualisation.py </code> Overlay images and mask and save 
 
 ## References
 - Overall preprocessing: https://github.com/Mansi-khemka/Cancer-Metastases-Segmentation-in-Gigapixel-Pathology-Images/blob/master/Preprocessing%20File.ipynb
